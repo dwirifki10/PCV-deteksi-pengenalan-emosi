@@ -1,2 +1,2 @@
 # PCV-deteksi-pengenalan-emosi
-emotion recognition system using python
+Emotion recognition system using python
