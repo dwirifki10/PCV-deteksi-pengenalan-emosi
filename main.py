@@ -6,13 +6,16 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-# import file
-face_classifier = cv2.CascadeClassifier(r'E:\KULIAH\APPS PROJECT\Emotion_Detection_CNN\haarcascade_frontalface_default.xml')
-classifier = load_model(r'E:\KULIAH\APPS PROJECT\Emotion_Detection_CNN\model.h5')
+# import file haar cascade classifier
+face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 
-# don't change
+# import file model
+classifier = load_model(r'model.h5')
+
+# don't change the posititon
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
+# start capturing
 cap = cv2.VideoCapture(0)
 
 while True:
